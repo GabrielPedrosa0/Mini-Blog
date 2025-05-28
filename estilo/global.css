@@ -58,17 +58,21 @@ nav > ul i{
 }
 
 .container-textsUsers{
+    display: flex;
+    flex-direction: column;
     border: 1px solid red;
     margin: 5px;
     width: 100vw;
     height: 100vh;
     padding: 5px;
+    gap: 5px;
 }
 
 .container-textsUsers button{
     position: absolute;
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .container-textsUsers > button i{
@@ -92,7 +96,15 @@ nav > ul i{
 }
 
 .container-userText{
-    border: 1px solid purple;
+    border: 2px solid aquamarine;
+    display: block;
+}
+
+.container-userText button{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 45px;
+    padding: 5px;
 }
 
 .container-userText .userText{
