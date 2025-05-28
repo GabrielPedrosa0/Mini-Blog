@@ -1,3 +1,9 @@
+/* 
+    window.onload = function() {
+        window.location.href = "login.html" //redireciona automaticamente para o ligin da pagina
+    }
+*/
+
 document.getElementById('createText').addEventListener("click", () => {
     const container = document.createElement('div')
     const textarea = document.createElement('textarea')
@@ -46,3 +52,23 @@ document.getElementById('createText').addEventListener("click", () => {
     document.getElementById('container-textsUsers').appendChild(container) 
 
 })
+
+window.onscroll = function() {
+    mostrarBotão()
+}
+
+function mostrarBotão() {
+    const btn = document.getElementById('btnTop')
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btn.style.display = 'block'
+    } else {
+        btn.style.display = 'none'
+    }
+}
+
+function btnTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
