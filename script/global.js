@@ -24,23 +24,21 @@ document.getElementById('createText').addEventListener("click", () => {
     publishButonn.addEventListener("click", () => {
         if(textarea.value.trim() !== ''){
             createPost(textarea.value)
-            textarea.value = "" //limpar o campo
-        }
-
-        function createPost(text){
-            const post = document.createElement('div')
-            post.className = "post"
-            post.style.whiteSpace = "pre-wrap" 
-
-            const postText = document.createElement('span')
-            postText.textContent = text
-
-            post.appendChild(postText)
-            document.getElementById('publish-content').appendChild(post)
+            container.remove() //Linha adicionada para que quando o usuario publique o campo de digitação desapareça
         }
     })
 
+    function createPost(text){
+        const post = document.createElement('div')
+        post.className = "post"
+        post.style.whiteSpace = "pre-wrap" 
 
+        const postText = document.createElement('span')
+        postText.textContent = text
+
+        post.appendChild(postText)
+        document.getElementById('publish-content').appendChild(post)
+    }
 
     //Botão de delet
     deletButonn.textContent = "Remover Campo"

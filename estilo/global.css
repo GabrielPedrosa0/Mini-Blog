@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import 'normalaizer.css';
 
 
@@ -108,8 +107,16 @@ nav > ul i:hover{
     margin-right: 8px;
 }
 
+textarea{
+    resize: none;
+    outline: none;
+    padding: 2px;
+    border: none;
+    border-bottom: 1px solid;
+    margin-bottom: 3px;
+}
+
 .container-userText{
-    border: 2px solid aquamarine;
     display: block;
 }
 
@@ -122,7 +129,11 @@ nav > ul i:hover{
 
 .container-userText .userText{
     width: 100%;
-    height: 100px;
-    resize: vertical; /* permite ajustar verticalmente */
+    height: auto;
     white-space: pre-wrape; /* Mantém quebra de linha */
+}
+
+.post{
+    border-bottom: 1px solid rgb(133, 133, 133);
+    margin: 10px 0 10px 0;
 }
