@@ -1,5 +1,4 @@
 @import '../normalaizer.css';
-@import 'login-MQ.css';
 
 body{
     align-items: center;
@@ -9,7 +8,7 @@ body{
     background: url('/imagens/fundo2.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
 }
 
 .container{

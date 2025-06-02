@@ -72,7 +72,7 @@ nav > ul i:hover{
     border: 1px solid red;
     margin: 5px;
     width: 100vw;
-    height: 100vh;
+    height: 93vh;
     padding: 5px;
     gap: 5px;
     overflow-y: auto;
@@ -90,6 +90,7 @@ nav > ul i:hover{
 }
 
 .btnTop, .createbtn{
+    position: absolute;
     right: 0;
     bottom: 0;
 }

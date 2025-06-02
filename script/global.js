@@ -1,9 +1,3 @@
-/* 
-    window.onload = function() {
-        window.location.href = "login.html" //redireciona automaticamente para o ligin da pagina
-    }
-*/
-
 document.getElementById('createText').addEventListener("click", () => {
     const container = document.createElement('div')
     const textarea = document.createElement('textarea')

@@ -4,38 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="estilo/global.css">
-    <title>Mini-blog</title>
+    <link rel="stylesheet" href='../estilo/partes/login.css'>
+    <link rel="stylesheet" href='../estilo/partes/login-MQ.css'>
+    <title>login</title>
 </head>
 <body>
     
-    <div class="conteiner-navbar">
-        <nav>
-            <ul>
-                <li><i class='bx  bx-home-alt-2'></i></li>
-                <li><i class='bx  bx-message-bubble-dots-2'></i> </li>
-                <li><i class='bx  bx-search'></i></li>
-                <li><i class='bx  bx-bookmark'></i></li>
-                <li><i class='bx  bx-cog'></i></li>
-            </ul>
-        </nav>
+    <div class="container">
 
-        <div class="perfil">
-            <button class="btn-perfil"></button> <!--Perfil do usuário-->
-            <h1>USER</h1>
-        </div>
+        <div class="img"></div>
+
+        <form action="#" id="formLogin" class="formLogin">
+            <h1>Olá, Bem-vindo(a)</h1>
+            <p class="aprest">faça login com a sua conta ou <br> crie para a proiveitar todo o nosso site.</p>
+
+            <div class="input-box">
+                <label for="user"><i class='bx  bx-user-circle'></i><input type="text" id="user"></label>
+            </div>
+            <div class="input-box">
+                <label for="pass"><i class='bx  bx-lock'></i><input type="password" id="pass" maxlength="8"></label>
+                <a href="#" class="esqueciSenha">Esqueceu a senha?</a>
+            </div>
+
+            <button class="btnLogin" id="btnLogin">Login</button>
+
+            <p>Ainda não tem uma conta? <a href="create.html">Criar conta</a></p>
+
+        </form>
     </div>
 
-    <div class="container-textsUsers" id="container-textsUsers">
-        <div class="container-userText">
-            <div id="publish-content"></div>
-        </div>
-
-        <button class="btnTop" id="btnTop" onclick="btnTop()"><i class='bx  bx-arrow-to-top-stroke'></i></button>
-        <button class="createbtn" id="createText"><i class='bx  bx-plus-circle'></i></button>    
-    </div>
-
-    <script src="script/global.js"></script>
+    <script src='/script/Partes/login.js'></script>
 
 </body>
 </html>
