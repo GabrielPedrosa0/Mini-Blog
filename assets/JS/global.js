@@ -1,3 +1,4 @@
+
 document.getElementById('createText').addEventListener("click", () => {
     const container = document.createElement('div')
     const textarea = document.createElement('textarea')
@@ -23,14 +24,19 @@ document.getElementById('createText').addEventListener("click", () => {
     })
 
     function createPost(text){
+        const publishContent = document.createElement('div')
         const post = document.createElement('div')
         post.className = "post"
         post.style.whiteSpace = "pre-wrap" 
+
+        publishContent.className = "publish-content"
+        publishContent.id = "publish-content"
 
         const postText = document.createElement('span')
         postText.textContent = text
 
         post.appendChild(postText)
+        document.getElementById('container-textsUsers').appendChild(publishContent)
         document.getElementById('publish-content').appendChild(post)
     }
 

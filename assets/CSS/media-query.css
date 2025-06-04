@@ -1,0 +1,65 @@
+/* telas grandes */
+
+@media screen and (min-width: 992px){
+    body{
+        display: flex;
+        height: 100vh;
+    }
+
+    .conteiner-navbar{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 300px;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .conteiner-navbar:hover{
+        transition: all 0.3s ease-in-out;
+        width: 300px;
+    }
+
+    .perfil{
+        position: absolute;
+        top: 10px;
+        left: 1px;
+    }
+
+    .perfil h1{
+        display: block;
+        color: white;
+    }
+
+    .log-out{
+        display: block;
+        color: #fff;
+        position: absolute;
+        bottom: 10px;
+        left: 5px;
+    }
+
+    .log-out i{
+        font-size: 30px;
+    }
+
+    nav{
+        position: absolute;
+        top: 50%;
+        left: 10px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li {
+        color: #fff;
+    }
+
+    nav > ul:hover{
+        position: absolute;
+        left: 5px;
+    }
+}

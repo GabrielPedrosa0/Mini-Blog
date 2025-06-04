@@ -1,3 +1,3 @@
 document.getElementById('btnLogin').addEventListener("click", () => {
-    window.location.href = '../Partes/blog.html'
+    window.location.href = '../views/blog-public.html'
 })
